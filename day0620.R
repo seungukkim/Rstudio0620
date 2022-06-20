@@ -103,3 +103,20 @@ class(df1$height)
 df2="Good"
 list1<-list(df1,df2)
 list1
+
+
+#데이터 내보내기& 불러오기
+no=c(1,2,3,4,5)
+sex=c("male","female","male","male","female")
+korean=c(87,92,95,81,87)
+exam=data.frame(no, sex, korean)
+exam
+
+write.csv(x=exam, file="temp.csv") # 내보내기
+
+#바탕화면에 dataset 폴더 생성, exam 객체 저장
+write.csv(x=exam,file="temp.csv")
+
+#데이터 불러오기
+temp=read.csv("dataset/temp.csv")
+temp2=read.csv("dataset2/temp.csv")
