@@ -65,4 +65,41 @@ exam[c(4,5),c(4,5)]#앞은 학생번호 뒤는 점수
 
 exam[3,] # 3번 학생의 모든 것을 알고 싶다.
 exam[,4] #english 점수를 전부 알고 싶다.
-exam
+exam[2:4,2:4]
+exam[c(1:3,5),c(1:3,5)]
+exam[-4,-4]
+exam[-c(2,4),-c(4,5)]
+exam$korean
+
+
+#연습문제 1
+student=c("A","B","C")
+height=c(175,160,180)
+weight=c(70,55,77)
+df=data.frame(student,height,weight)
+df
+#연습문제 2
+df[1,3]
+df[3,2]
+df[2,]
+df[,2]
+df[c(1,2),c(2,3)]
+
+#연습문제3
+sex=c("male","female","male")
+df1=data.frame(sex,df)
+df1
+df1=data.frame(student,sex,height,weight)
+df1
+
+#연습문제 4
+df1$student
+
+#연습문제 5
+class(df1$student)
+class(df1$height)
+
+#연습 문제 6
+df2="Good"
+list1<-list(df1,df2)
+list1
