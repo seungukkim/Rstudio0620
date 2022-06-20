@@ -1,0 +1,30 @@
+logical_vector<-c(TRUE,FALSE)
+logical_vector
+
+char_vector<-c("hi","hello")
+char_vector
+
+# 명목형 자료형 Factor
+locaiton_vector <- c("서울", "인천", "부산")
+factor_location_vector <- factor(locaiton_vector)
+factor_location_vector
+
+class(factor_location_vector)
+help(factor)
+
+# 순서형 자료형 Factor
+temperature_factor <- c("기온높음", 
+                        "기온보통", 
+                        "기온낮음", 
+                        "기온높음", 
+                        "기온보통", 
+                        "기온보통")
+
+temperature_factor
+
+factor_temperature_factor <- factor(temperature_factor, 
+                                    ordered = TRUE, 
+                                    levels  = c("기온보통", 
+                                                "기온낮음", 
+                                                "기온높음"))
+factor_temperature_factor
