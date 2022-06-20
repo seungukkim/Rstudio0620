@@ -47,3 +47,18 @@ factor_temperature_factor
 
 ```
 
+데이터 프레임 만들기
+```{r}
+sex<-c("male","female")
+korean<-c(72,83)
+english<-c(99,31)
+
+exam_a<-data.frame(sex,korean,english)
+exam_a
+```
+str 사용하기
+```{r}
+str(exam_a)
+```
+
+
